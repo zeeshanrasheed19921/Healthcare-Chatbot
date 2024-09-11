@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Healthcare Assistant</h1>
+        <div id="chat-box" class="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask about symptoms or health tips..." />
+            <button id="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+        <div class="options">
+            <h3>Or select a common disease:</h3>
+            <button onclick="selectDisease('Headache')">Headache</button>
+            <button onclick="selectDisease('Fever')">Fever</button>
+            <button onclick="selectDisease('Thyroid')">Thyroid</button>
+            <button onclick="selectDisease('Diabetes')">Diabetes</button>
+            <button onclick="selectDisease('Cold')">Cold</button>
+            <!-- Add more buttons as needed -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
